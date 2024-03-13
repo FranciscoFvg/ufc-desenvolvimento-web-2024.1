@@ -4,8 +4,10 @@ import Loja from "./components/03Props/loja";
 import Curso from "./components/03Props/Curso";
 import Galaxia from "./components/04Children/Galaxia";
 import ComPai from "./components/05ComPaiFilho/ComPai";
-import Estado from "./components/06Estado/Estado"; */
+import Estado from "./components/06Estado/Estado";
 import Pokemon from "./components/06Estado/Pokemon";
+import {CompA} from "./components/08Contexto/Contexto"; */
+import PokemonPrincipal from "./components/09PokemonContexto/PokemonPrincipal";
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
       {/* <Galaxia nome={"Via Lactea"}/> */}
       {/* <ComPai/> */}
       {/* <Estado/> */}
-      <Pokemon/>
+      {/* <Pokemon/> */}
+      {/* <CompA/> */}
+      <PokemonPrincipal />
     </div>
   );
 }
