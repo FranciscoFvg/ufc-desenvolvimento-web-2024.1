@@ -7,7 +7,9 @@ import ComPai from "./components/05ComPaiFilho/ComPai";
 import Estado from "./components/06Estado/Estado";
 import Pokemon from "./components/06Estado/Pokemon";
 import {CompA} from "./components/08Contexto/Contexto"; */
-import PokemonPrincipal from "./components/09PokemonContexto/PokemonPrincipal";
+/* import PokemonPrincipal from "./components/09PokemonContexto/PokemonPrincipal"; */
+/* import Efeito from "./components/10Efeito/Efeito"; */
+import ComponentePromessa from "./components/11Promessas/MinhaPromessa";
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
       {/* <Estado/> */}
       {/* <Pokemon/> */}
       {/* <CompA/> */}
-      <PokemonPrincipal />
+      {/* <PokemonPrincipal /> */}
+      {/* <Efeito /> */}
+      <ComponentePromessa />
     </div>
   );
 }
