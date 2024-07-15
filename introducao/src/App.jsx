@@ -10,7 +10,8 @@ import {CompA} from "./components/08Contexto/Contexto"; */
 /* import PokemonPrincipal from "./components/09PokemonContexto/PokemonPrincipal"; */
 /* import Efeito from "./components/10Efeito/Efeito"; */
 /* import ComponentePromessa from "./components/11Promessas/MinhaPromessa"; */
-import CovidAxios from "./components/12Axios/CovidAxios";
+/* import CovidAxios from "./components/12Axios/CovidAxios"; */
+import SaveLoadData from "./components/13LocalSessionStorage/SaveLoadData";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       {/* <PokemonPrincipal /> */}
       {/* <Efeito /> */}
       {/* <ComponentePromessa /> */}
-      <CovidAxios />
+      {/* <CovidAxios /> */}
+      <SaveLoadData />
     </div>
   );
 }

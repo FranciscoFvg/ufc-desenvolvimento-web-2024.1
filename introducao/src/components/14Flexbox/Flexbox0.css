@@ -1,0 +1,26 @@
+header{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2, p{
+    font-family: 'Arial', sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid blueviolet;
+    flex-wrap: wrap;
+}
+
+article{
+    width: 300px;
+    background-color: aqua;
+    padding: 10px;
+    box-sizing: border-box;
+}
