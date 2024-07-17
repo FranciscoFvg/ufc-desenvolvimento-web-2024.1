@@ -1,5 +1,5 @@
 header{
-    background-color: blueviolet;
+    background-color: darkmagenta;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -23,27 +23,27 @@ article{
     background-color: aqua;
     padding: 10px;
     box-sizing: border-box;
-    flex: 1;
-}
-
-article:nth-of-type(2){
-    background-color: aquamarine;
-    flex: 2;
-}
-
-/* article:nth-of-type(3){
-    background-color: aquamarine;
-    flex: 3;
-} */
-
-.terceiro{
-    background-color: brown;
     flex: 3;
 }
-.terceiro > h2{
-    color: white;
+
+article.terceiro{
+    flex: 5;
 }
 
-.terceiro > p{
-    color: white;
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-weight: 900;
+}
+
+#buttons button{
+    width: 22%;
+    padding: 5px;
+}
+
+#buttons button:last-child{
+    font-weight: 900;
+    width: 100%;
 }
