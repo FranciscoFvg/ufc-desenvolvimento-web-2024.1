@@ -11,28 +11,15 @@ import {CompA} from "./components/08Contexto/Contexto"; */
 /* import Efeito from "./components/10Efeito/Efeito"; */
 /* import ComponentePromessa from "./components/11Promessas/MinhaPromessa"; */
 /* import CovidAxios from "./components/12Axios/CovidAxios"; */
-import SaveLoadData from "./components/13LocalSessionStorage/SaveLoadData";
+/* import SaveLoadData from "./components/13LocalSessionStorage/SaveLoadData"; */
+/* import MyNavbar from "./components/15Bootstrap/MyNavbar"; */
+import Main from "./components/16CRUD/Main";
 
 function App() {
   return (
-    <div>
-      <h1>Desenvolvimento de Software para WEB!</h1>
-      {/* <h3>Prof. Jefferson de Carvalho</h3> */}
-      {/* <HelloWorld /> */}
-      {/* <FuncoesInternas /> */}
-      {/* <Loja /> */}
-      {/* <Curso /> */}
-      {/* <Galaxia nome={"Via Lactea"}/> */}
-      {/* <ComPai/> */}
-      {/* <Estado/> */}
-      {/* <Pokemon/> */}
-      {/* <CompA/> */}
-      {/* <PokemonPrincipal /> */}
-      {/* <Efeito /> */}
-      {/* <ComponentePromessa /> */}
-      {/* <CovidAxios /> */}
-      <SaveLoadData />
-    </div>
+    <>
+      <Main />
+    </>
   );
 }
 
