@@ -1,6 +1,8 @@
 import professores from "../data/db_professor"
 import '../css/crud.css'
 
+import { Link } from "react-router-dom"
+
 const Listar = () => {
 
   const renderizarProfessores = () => {
@@ -13,6 +15,10 @@ const Listar = () => {
               <td>{professor.nome}</td>
               <td>{professor.curso}</td>
               <td>{professor.titulacao}</td>
+              <td>
+                <Link className="btn btn-secondary mx-1" to={`/professor/editar/${professor.id}`}>Editar</Link>
+                <Link className="btn btn-danger" to={`/professor/editar/${professor.id}`}>Excluir</Link>
+              </td>
             </tr>
           )
         })}
@@ -30,6 +36,7 @@ const Listar = () => {
               <th scope="col">nome</th>
               <th scope="col">curso</th>
               <th scope="col">titulacao</th>
+              <th scope="col">acoes</th>
             </tr>
           </thead>
           <tbody>

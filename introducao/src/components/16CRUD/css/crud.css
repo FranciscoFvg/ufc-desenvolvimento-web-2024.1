@@ -1,6 +1,21 @@
-/* Bonus */
 .page-content {
-    padding: 20px;
-    background-color: #f5f5f5;
-    min-height: 100vh;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 95%;
+}
+
+.table-content {
+    margin-top: 15px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+.div-button-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 30px;
 }
