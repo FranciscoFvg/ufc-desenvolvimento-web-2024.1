@@ -1,0 +1,60 @@
+# Questão 05
+Como o uso de Contextos pode resolver o problema de PROPS DRILLING.
+
+## Resposta
+
+Usar o contexto permite que props sejam usados por diferentes componentes mesmo sem contato direto entre tais componentes.
+O contexto é enviado para o componente pai e todos os componentes filhos deste componente pai usando o provider.
+Após isso qualquer componente filho na arvore podera ter acesso ao contexto, lendo e modificando-o.
+
+## Exemplo
+import { Variavel } from "./VariavelContext"
+import { useContext } from "react"
+
+const ComponenteA = () => {
+
+    let variavelPrimeira = { texto : "variavel do primeiro componente", ano : 2010 }
+
+    return (
+        <>
+            <Variavel.Provider value={variavelPrimeira}>
+                <ComponenteB/>
+                <ComponenteC/>
+            </Variavel.Provider>
+        </>
+    )
+}
+const ComponenteB = () => {
+
+    const variavel = useContext(Variavel);
+
+    return (
+        <>
+            <h2>B: {variavel.texto}</h2>
+        </>
+    )
+}
+const ComponenteC = () => {
+    return (
+        <>
+            <ComponenteD/>
+        </>
+    )
+}
+const ComponenteD = () => {
+    return (
+        <>
+            <ComponenteE/>
+        </>
+    )
+}
+const ComponenteE = () => {
+
+    const {ano} = useContext(Variavel);
+
+    return (
+        <>
+            <h3>E: {ano}</h3>
+        </>
+    )
+}
